@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+  <title>My LIFF App</title>
+</head>
+<body>
+    <script src="https://static.line-scdn.net/liff/edge/versions/2.5.0/sdk.js"></script>
+    <script>
+        async function main() {
+                                         // Liff ID
+            await liff.init({ liffId: "1657615273-EmOVLOOA" })
+            await liff.shareTargetPicker([
+                {
+                    type: "flex",
+                    // ข้อความก่อนกดอ่าน
+                    altText: "คุณพี่โชคดี ได้รับเครดิตฟรี 50 ค่ะ",
+                    contents: 
+                    // โค้ดจาก line bot designer
+                    {
+  "type": "bubble",
+  "hero": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "image",
+                "url": "https://cdn.discordapp.com/attachments/1037306034739486791/1037307329827315782/free50.jpg",
+                "size": "full",
+                "aspectMode": "fit",
+                "aspectRatio": "1:1"
+              }
+            ],
+            "paddingAll": "none"
+          }
+        ],
+        "cornerRadius": "lg",
+        "borderColor": "#006633",
+        "borderWidth": "medium"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "size": "full",
+            "aspectRatio": "2:1",
+            "url": "https://cdn.discordapp.com/attachments/1037306034739486791/1037332946174099496/74f4be474b5c5f3c.png",
+            "action": {
+              "type": "uri",
+              "label": "action",
+              "uri": "https://lin.ee/USLDIVi"
+            }
+          }
+        ],
+        "margin": "sm",
+        "action": {
+          "type": "uri",
+          "label": "action",
+          "uri": "https://lin.ee/USLDIVi"
+        }
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "image",
+                "url": "https://cdn.discordapp.com/attachments/1037306034739486791/1037333476749353041/c269bdf4556ece77.png",
+                "size": "full",
+                "aspectMode": "fit",
+                "aspectRatio": "4.8:1.33",
+                "action": {
+                  "type": "uri",
+                  "label": "action",
+                  "uri": "https://lin.ee/USLDIVi"
+                }
+              }
+            ],
+            "action": {
+              "type": "uri",
+              "label": "action",
+              "uri": "https://lin.ee/USLDIVi"
+            }
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "image",
+                "url": "https://cdn.discordapp.com/attachments/1037306034739486791/1037333501877432350/47dd4b76d06cab97.png",
+                "size": "full",
+                "aspectRatio": "4.8:1.33",
+                "aspectMode": "fit",
+                "action": {
+                  "type": "uri",
+                  "label": "action",
+                  "uri": "https://lin.ee/USLDIVi"
+                }
+              }
+            ],
+            "action": {
+              "type": "uri",
+              "label": "action",
+              "uri": "https://lin.ee/USLDIVi"
+            }
+          }
+        ],
+        "spacing": "md",
+        "margin": "md"
+      }
+    ],
+    "paddingAll": "md",
+    "backgroundColor": "#003300"
+  }
+}
+                }
+            ])
+            liff.closeWindow()
+        }
+        main()
+    </script>
+</body>
+</html>
